@@ -1,0 +1,24 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td{ margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight: normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+ol, ul,li{ list-style: none; }
+a{ cursor: pointer; }
+html,body,.viewport,.flipsnap,#zoom,#zoom>div{ width: 640px; height: 100%; }
+.viewport { position: relative; width: 640px; height: 100%; overflow: hidden; margin: 0 auto; -webkit-text-size-adjust: none; -webkit-user-select: none; -webkit-tap-highlight-color:transparent; -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */; }
+.flipsnap:after,.menu-content:after { content: ''; display: block; clear: both; height: 0; }
+.flipsnap li { position: relative; float: left; width: 640px; height: 100%; text-align: center; }
+.flipsnap li img{ height: 100%; background: url(../images/loading.gif) no-repeat center; }
+.flipsnap li a{ position: absolute; top: 0; width: 33.3%; height: 100%; }
+.prev{ left: 0; }
+.menu{ left: 33.3%; }
+.next{ right: 0; }
+.menu-warp{ position: absolute; bottom: 0; left: 0; width: 640px; height: 258px; background: url(../images/menu-warp.png); -webkit-transition:-webkit-transform .3s; -webkit-transform: translate3d(0, 100%, 0); }
+.menu-warp.show{ -webkit-transform: translate3d(0, 0, 0); }
+.menu-warp .pages{ font-size: 30px; height: 40px; line-height: 40px; color: #fff; text-align: center; }
+.menu-warp li{float: left; width: 320px; height: 220px; overflow: hidden; text-align: center; }
+.menu-warp li.on .img:before{content: url(../images/chapter-bg-on.png);width: 114px;height: 114px;position: absolute;top: -5px;left: -5px;}
+.menu-warp .img{ position: relative; background: url(../images/chapter-bg.png) no-repeat center; width: 111px; height: 110px; margin:17px auto 5px; }
+.menu-warp .img img{ display: block; padding:1px 0 0 1px; width: 102px; height: 102px; border-radius: 3px; }
+.menu-warp .title { color: #ca830a; font-size: 30px; padding-bottom: 5px;}
+.menu-warp .info { font-size: 23px; color: #ffcc00; text-shadow: 2px 2px 4px #000, -1px -1px 4px #000;}
