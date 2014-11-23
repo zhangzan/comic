@@ -121,6 +121,8 @@ FastClick.attach(document.body);
             wheelAction: 'zoom'
         });
     });
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
 })()
 
