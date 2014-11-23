@@ -65,7 +65,6 @@ $('.menu').click(function() {
 });
 
 // 延时加载
-
 function lazyLoading() {
     for (var ii = -1; ii < 3; ii++) {
         var index = flipsnap.currentPoint+ii;
@@ -121,9 +120,6 @@ FastClick.attach(document.body);
             mouseWheel: true,
             wheelAction: 'zoom'
         });
-        myScroll.on('zoomStart', zz());
-        function zz(){
-        }
     });
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 })()
